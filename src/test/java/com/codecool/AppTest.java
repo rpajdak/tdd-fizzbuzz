@@ -3,8 +3,7 @@ package com.codecool;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
@@ -20,7 +19,7 @@ public class AppTest {
     @Test
     public void shouldReturnArrayWith1() {
         String[] myStringArray = {"1"};
-        assertEquals(fizzBuzz.convert(1),myStringArray);
+        assertArrayEquals(fizzBuzz.convert(1),myStringArray);
     }
 
 }
