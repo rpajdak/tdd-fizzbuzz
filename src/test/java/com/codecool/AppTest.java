@@ -17,7 +17,6 @@ public class AppTest {
         fizzBuzz = new FizzBuzz();
     }
 
-
     @Test
     public void shouldReturnArrayWith1() {
         String[] myStringArray = {"1"};
