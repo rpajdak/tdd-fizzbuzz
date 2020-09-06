@@ -22,4 +22,9 @@ public class AppTest {
         assertArrayEquals(fizzBuzz.convert(1),myStringArray);
     }
 
+    @Test
+    public void shouldReturnArrayWith1and2whenGiven2() {
+        String[] myStringArray = {"1", "2"};
+        assertArrayEquals(fizzBuzz.convert(2),myStringArray);
+    }
 }
