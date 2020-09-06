@@ -25,4 +25,9 @@ public class BowlingTest {
         assertEquals(90, bowling.calculatePoints(frames));
     }
 
+    @Test
+    void shouldReturn50When10PairsOf2and3() {
+        String[][] frames = {{"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}, {"2","3"}};
+        assertEquals(50, bowling.calculatePoints(frames));
+    }
 }

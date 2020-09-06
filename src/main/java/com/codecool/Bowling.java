@@ -3,11 +3,14 @@ package com.codecool;
 public class Bowling {
 
     public int calculatePoints(String[][] frames) {
-        for (int i = 0; i < frames.length; i++) {
+        int points = 0;
+        for (int i = 0; i < 10; i++) {
             if (!frames[i][0].equals("X")) {
-                return 1;
+                points += Integer.parseInt(frames[i][0]);
+            } else {
+                points += 30;
             }
         }
-        return 300;
+        return points;
     }
 }
