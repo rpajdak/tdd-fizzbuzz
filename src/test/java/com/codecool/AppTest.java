@@ -30,6 +30,10 @@ public class AppTest {
 
     @Test
     public void shouldReturnArryaWithFizzOnLastElementWhenGiven3(){
+        String [][] frames  =  {{"X",""},{""}};
+
+
+
         String[] myStringArray = {"1", "2","Fizz"};
         assertArrayEquals(fizzBuzz.convert(3),myStringArray);
     }

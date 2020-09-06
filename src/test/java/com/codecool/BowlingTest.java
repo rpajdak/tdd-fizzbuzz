@@ -18,4 +18,11 @@ public class BowlingTest {
         String[][] frames = {{"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}, {"X"}};
         assertEquals(300, bowling.calculatePoints(frames));
     }
+
+    @Test
+    void shouldReturn90When10PairOf9() {
+        String[][] frames = {{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"},{"9","-"}};
+        assertEquals(90, bowling.calculatePoints(frames));
+    }
+
 }
