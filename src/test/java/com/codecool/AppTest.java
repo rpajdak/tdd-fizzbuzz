@@ -27,4 +27,11 @@ public class AppTest {
         String[] myStringArray = {"1", "2"};
         assertArrayEquals(fizzBuzz.convert(2),myStringArray);
     }
+
+    @Test
+    public void shouldReturnArryaWithFizzOnLastElementWhenGiven3(){
+        String[] myStringArray = {"1", "2","Fizz"};
+        assertArrayEquals(fizzBuzz.convert(3),myStringArray);
+    }
+
 }
